@@ -1,0 +1,404 @@
+# 📊 Firestore Database Schema
+
+Complete database structure for the Finance Blog Platform.
+
+## Collections Overview
+
+```
+firestore/
+├── blogs/           # Blog posts
+├── comments/        # Comments on blogs
+├── likes/           # Likes on blogs and comments
+├── tags/            # Content tags
+└── views/           # View tracking data
+```
+
+---
+
+## 1. `blogs` Collection
+
+Main collection storing all blog posts (published and unpublished).
+
+### Document Structure
+
+```typescript
+{
+  id: string,              // Auto-generated document ID
+  title: string,           // Blog title
+  content: [               // Rich text content as JSON array
+    {
+      type: 'paragraph' | 'heading' | 'code' | ...,
+      content: string,
+      level?: number,      // For headings (1-6)
+      language?: string    // For code blocks
+    }
+  ],
+  excerpt: string,         // First 160 chars for SEO
+  tags: string[],          // Array of tag IDs
+  authorEmail: string,     // Admin email
+  authorName: string,      // Admin display name
+  
+  // Status
+  published: boolean,
+  publishedAt?: string,    // ISO 8601 timestamp
+  
+  // Metrics
+  views: number,           // Total views
+  engagedReads: number,    // Views ≥15 seconds
+  likesCount: number,
+  commentsCount: number,
+  
+  // SEO
+  slug: string,            // URL-friendly version of title
+  readTime: number,        // Estimated minutes
+  
+  // Timestamps
+  createdAt: string,       // ISO 8601
+  updatedAt: string        // ISO 8601
+}
+```
+
+### Indexes Required
+
+```
+- published (ascending) + publishedAt (descending)
+- slug (ascending)
+- tags (array-contains) + publishedAt (descending)
+```
+
+### Example Document
+
+```json
+{
+  "id": "abc123xyz",
+  "title": "Understanding Mutual Funds in India",
+  "content": [
+    {
+      "type": "paragraph",
+      "content": "Mutual funds are investment vehicles that pool money from multiple investors..."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Types of Mutual Funds"
+    }
+  ],
+  "excerpt": "Mutual funds are investment vehicles that pool money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities...",
+  "tags": ["tag_mutual_funds_001", "tag_investing_002"],
+  "authorEmail": "admin@example.com",
+  "authorName": "Finance Educator",
+  "published": true,
+  "publishedAt": "2024-01-15T10:30:00.000Z",
+  "views": 1523,
+  "engagedReads": 892,
+  "likesCount": 45,
+  "commentsCount": 12,
+  "slug": "understanding-mutual-funds-in-india",
+  "readTime": 5,
+  "createdAt": "2024-01-15T10:30:00.000Z",
+  "updatedAt": "2024-01-15T10:30:00.000Z"
+}
+```
+
+---
+
+## 2. `comments` Collection
+
+User comments on blog posts (no authentication required).
+
+### Document Structure
+
+```typescript
+{
+  id: string,              // Auto-generated
+  blogId: string,          // Reference to blog
+  user: {
+    name: string,          // Commenter's name
+    email: string          // NOT displayed publicly
+  },
+  content: string,         // Comment text
+  likesCount: number,
+  
+  // Optional for nested replies
+  parentId?: string,       // Parent comment ID
+  replyCount?: number,     // Number of replies
+  
+  // Timestamps
+  createdAt: string,
+  updatedAt: string
+}
+```
+
+### Indexes Required
+
+```
+- blogId (ascending) + createdAt (ascending)
+- parentId (ascending) + createdAt (ascending)
+```
+
+### Example Document
+
+```json
+{
+  "id": "comment_001",
+  "blogId": "abc123xyz",
+  "user": {
+    "name": "Rahul Sharma",
+    "email": "rahul@example.com"
+  },
+  "content": "Great explanation! This helped me understand the basics of mutual funds.",
+  "likesCount": 3,
+  "createdAt": "2024-01-15T11:00:00.000Z",
+  "updatedAt": "2024-01-15T11:00:00.000Z"
+}
+```
+
+### Example Reply Document
+
+```json
+{
+  "id": "comment_002",
+  "blogId": "abc123xyz",
+  "parentId": "comment_001",
+  "user": {
+    "name": "Priya Singh",
+    "email": "priya@example.com"
+  },
+  "content": "I agree! The author explains it very clearly.",
+  "likesCount": 1,
+  "replyCount": 0,
+  "createdAt": "2024-01-15T11:15:00.000Z",
+  "updatedAt": "2024-01-15T11:15:00.000Z"
+}
+```
+
+---
+
+## 3. `likes` Collection
+
+Tracks likes on blogs and comments (prevents spam with session tracking).
+
+### Document Structure
+
+```typescript
+{
+  id: string,              // Auto-generated
+  targetId: string,        // Blog or Comment ID
+  targetType: 'blog' | 'comment',
+  sessionId: string,       // Browser session fingerprint (IP + User-Agent)
+  createdAt: string
+}
+```
+
+### Indexes Required
+
+```
+- targetId (ascending) + sessionId (ascending)
+- targetId (ascending)
+```
+
+### Example Document
+
+```json
+{
+  "id": "like_001",
+  "targetId": "abc123xyz",
+  "targetType": "blog",
+  "sessionId": "192.168.1.1-Mozilla/5.0...",
+  "createdAt": "2024-01-15T11:30:00.000Z"
+}
+```
+
+---
+
+## 4. `tags` Collection
+
+Content categorization tags.
+
+### Document Structure
+
+```typescript
+{
+  id: string,              // Auto-generated
+  name: string,            // Display name
+  slug: string,            // URL-friendly version
+  blogCount: number,       // Number of blogs with this tag
+  createdAt: string
+}
+```
+
+### Indexes Required
+
+```
+- slug (ascending)
+- name (ascending)
+```
+
+### Example Documents
+
+```json
+{
+  "id": "tag_mutual_funds_001",
+  "name": "Mutual Funds",
+  "slug": "mutual-funds",
+  "blogCount": 15,
+  "createdAt": "2024-01-10T09:00:00.000Z"
+}
+```
+
+```json
+{
+  "id": "tag_investing_002",
+  "name": "Investing Basics",
+  "slug": "investing-basics",
+  "blogCount": 23,
+  "createdAt": "2024-01-10T09:00:00.000Z"
+}
+```
+
+---
+
+## 5. `views` Collection
+
+Tracks page views and engaged reads (≥15 seconds).
+
+### Document Structure
+
+```typescript
+{
+  id: string,              // Auto-generated
+  blogId: string,          // Reference to blog
+  sessionId: string,       // Browser session fingerprint
+  viewedAt: string,        // When the view occurred
+  engagedRead: boolean     // True if stayed ≥15 seconds
+}
+```
+
+### Indexes Required
+
+```
+- blogId (ascending) + sessionId (ascending) + viewedAt (descending)
+```
+
+### Example Document
+
+```json
+{
+  "id": "view_001",
+  "blogId": "abc123xyz",
+  "sessionId": "192.168.1.1-Mozilla/5.0...",
+  "viewedAt": "2024-01-15T12:00:00.000Z",
+  "engagedRead": true
+}
+```
+
+---
+
+## Data Flow Examples
+
+### Creating a Blog Post
+
+1. Admin creates blog with tags
+2. Backend checks if tags exist:
+   - If yes: Use existing tag IDs
+   - If no: Create new tags
+3. Create blog document with tag IDs
+4. Increment `blogCount` on each tag
+
+### Adding a Comment
+
+1. User submits comment (name + email + content)
+2. Backend verifies blog exists and is published
+3. Create comment document
+4. Increment `commentsCount` on blog
+
+### Liking Content
+
+1. User clicks like button
+2. Backend generates sessionId from IP + User-Agent
+3. Check if session already liked:
+   - If yes: Remove like (unlike)
+   - If no: Add like
+4. Update `likesCount` on target (blog or comment)
+
+### Tracking Views
+
+1. User loads blog page
+2. Frontend calls `/api/views/view` with blogId
+3. Backend checks if session recently viewed (5 min cooldown)
+4. If not recent: Create view record, increment blog views
+5. After 15 seconds: Frontend calls `/api/views/engaged`
+6. Backend marks view as engaged, increments engagedReads
+
+---
+
+## Firestore Rules (Production)
+
+```javascript
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Blogs: Read if published, write only for admin
+    match /blogs/{blogId} {
+      allow read: if resource.data.published == true;
+      allow write: if request.auth != null && request.auth.token.email == 'admin@example.com';
+    }
+    
+    // Comments: Read all, create without auth
+    match /comments/{commentId} {
+      allow read: if true;
+      allow create: if request.resource.data.user.name is string && 
+                       request.resource.data.user.email is string;
+      allow delete: if request.auth != null && request.auth.token.email == 'admin@example.com';
+    }
+    
+    // Likes: Read all, create/delete without auth (spam handled by backend)
+    match /likes/{likeId} {
+      allow read: if true;
+      allow create, delete: if true;
+    }
+    
+    // Tags: Read all, write only for admin
+    match /tags/{tagId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.email == 'admin@example.com';
+    }
+    
+    // Views: Create without auth (spam handled by backend)
+    match /views/{viewId} {
+      allow create: if true;
+      allow read: if false;
+    }
+  }
+}
+```
+
+---
+
+## Storage Estimates
+
+Based on typical usage:
+
+| Collection | Docs/Month | Size/Doc | Monthly Storage |
+|------------|-----------|----------|-----------------|
+| blogs | 20 | 50 KB | 1 MB |
+| comments | 500 | 1 KB | 500 KB |
+| likes | 2,000 | 0.2 KB | 400 KB |
+| tags | 50 | 0.5 KB | 25 KB |
+| views | 10,000 | 0.3 KB | 3 MB |
+| **Total** | | | **~5 MB/month** |
+
+**Firebase Free Tier**: 1 GB storage → ~200 months of data!
+
+---
+
+## Backup Strategy
+
+1. **Automated**: Enable Firebase automatic backups
+2. **Manual**: Export collections weekly using Firebase CLI
+3. **Testing**: Use separate Firebase project for development
+
+---
+
+**Ready to scale!** This schema supports millions of documents efficiently.
