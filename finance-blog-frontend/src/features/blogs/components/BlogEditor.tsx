@@ -25,9 +25,10 @@ const BlogEditor = ({ content, onChange, placeholder }: BlogEditorProps) => {
         lowlight,
       }),
     ],
-    content,
+    content: content ? JSON.parse(content || '{"type":"doc","content":[]}') : undefined,
     onUpdate: ({ editor }) => {
-      onChange(editor.getHTML());
+      // Output JSON instead of HTML
+      onChange(JSON.stringify(editor.getJSON()));
     },
     editorProps: {
       attributes: {

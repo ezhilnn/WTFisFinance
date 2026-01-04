@@ -98,11 +98,6 @@ const BlogDetailPage = () => {
     day: 'numeric',
   });
 
-  // Convert HTML content to string for BlogReader
-  const htmlContent = Array.isArray(currentBlog.content)
-    ? JSON.stringify(currentBlog.content)
-    : currentBlog.content;
-
   return (
     <div className={styles.page}>
       <article className={styles.container}>
@@ -145,7 +140,7 @@ const BlogDetailPage = () => {
               <Button
                 variant="secondary"
                 size="small"
-                onClick={() => navigate(`/admin/edit-blog/${currentBlog.id}`)}
+                onClick={() => navigate(`/admin/edit-blog/${currentBlog.slug}`)}
               >
                 Edit Blog
               </Button>
@@ -155,7 +150,7 @@ const BlogDetailPage = () => {
 
         {/* Content */}
         <div className={styles.content}>
-          <BlogReader content={htmlContent} />
+          <BlogReader content={currentBlog.content} />
         </div>
 
         {/* Footer disclaimer */}

@@ -16,6 +16,42 @@ const BlogCard = ({ blog }: BlogCardProps) => {
     }
   );
 
+  // Extract plain text from content if excerpt is not a string
+  const getExcerpt = (): string => {
+    // Check if excerpt is valid and doesn't contain [object Object]
+    if (
+      typeof blog.excerpt === 'string' && 
+      blog.excerpt.trim() && 
+      !blog.excerpt.includes('[object Object]')
+    ) {
+      return blog.excerpt;
+    }
+
+    // Otherwise, try to extract from content
+    if (Array.isArray(blog.content)) {
+      const extractText = (content: any[]): string => {
+        return content
+          .map(block => {
+            if (block.text) return block.text;
+            if (block.content && Array.isArray(block.content)) {
+              return extractText(block.content);
+            }
+            return '';
+          })
+          .join(' ')
+          .trim();
+      };
+
+      const text = extractText(blog.content);
+      // Return first 150 characters as excerpt
+      return text.length > 150 ? text.substring(0, 150) + '...' : text;
+    }
+
+    return 'Click to read this blog post...';
+  };
+
+  const excerpt = getExcerpt();
+
   return (
     <Link to={`/blogs/${blog.slug}`} className={styles.card}>
       {/* Tags */}
@@ -33,7 +69,7 @@ const BlogCard = ({ blog }: BlogCardProps) => {
       <h2 className={styles.title}>{blog.title}</h2>
 
       {/* Excerpt */}
-      <p className={styles.excerpt}>{blog.excerpt}</p>
+      <p className={styles.excerpt}>{excerpt}</p>
 
       {/* Meta info */}
       <div className={styles.meta}>

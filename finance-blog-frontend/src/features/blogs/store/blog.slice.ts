@@ -31,7 +31,8 @@ const blogSlice = createSlice({
     },
     fetchBlogsSuccess: (state, action: PayloadAction<PaginatedResponse<Blog>>) => {
       state.isLoading = false;
-      state.blogs = action.payload.data;
+      // state.blogs = action.payload.data;
+        state.blogs = action.payload.data;  // Now this will be the blogs array
       state.pagination = action.payload.pagination;
     },
     fetchBlogsFailure: (state, action: PayloadAction<string>) => {

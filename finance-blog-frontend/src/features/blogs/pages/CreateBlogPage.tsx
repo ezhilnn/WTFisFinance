@@ -35,8 +35,22 @@ const CreateBlogPage = () => {
       newErrors.title = 'Title is required';
     }
 
-    if (!content.trim() || content === '<p></p>') {
-      newErrors.content = 'Content is required';
+    // Check if content is empty (TipTap's empty state)
+    let parsedContent;
+    try {
+      parsedContent = JSON.parse(content || '{}');
+      const isEmpty = 
+        !parsedContent.content || 
+        parsedContent.content.length === 0 ||
+        (parsedContent.content.length === 1 && 
+         parsedContent.content[0].type === 'paragraph' && 
+         !parsedContent.content[0].content);
+      
+      if (isEmpty) {
+        newErrors.content = 'Content is required';
+      }
+    } catch (error) {
+      newErrors.content = 'Invalid content format';
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -45,13 +59,14 @@ const CreateBlogPage = () => {
     }
 
     setErrors({});
-
+    console.log("title:", title.trim(), "\ncontent:", parsedContent, "tags:", selectedTags);
+    
     // Create blog
     dispatch(
       createBlogRequest({
         data: {
           title: title.trim(),
-          content: JSON.parse(content), // TipTap stores as HTML, we need JSON
+          content: parsedContent.content || [], // Send the content array from TipTap JSON
           tags: selectedTags,
           published,
         },

@@ -16,12 +16,13 @@ import { useToast } from '../../../hooks/useToast';
 import styles from './CreateBlogPage.module.css'; // Reuse same styles
 
 const EditBlogPage = () => {
-  const { id } = useParams<{ id: string }>();
+  const { id: slugOrId } = useParams<{ id: string }>(); // Get the route param (could be slug or id)
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const toast = useToast();
   const { tags, isLoading } = useAppSelector((state) => state.blogs);
 
+  const [blogId, setBlogId] = useState('');
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -38,21 +39,34 @@ const EditBlogPage = () => {
   // Load blog data
   useEffect(() => {
     const loadBlog = async () => {
-      if (!id) return;
+      if (!slugOrId) {
+        console.error('No slug/id provided');
+        return;
+      }
 
       try {
         setIsLoadingBlog(true);
-        const blog = await getBlogBySlug(id);
+        console.log('Loading blog with slug/id:', slugOrId);
         
+        const blog = await getBlogBySlug(slugOrId); // getBlogBySlug works with slugs
+        console.log('Blog loaded:', blog);
+        
+        setBlogId(blog.id);
         setTitle(blog.title);
-        setContent(
-          Array.isArray(blog.content)
-            ? JSON.stringify(blog.content)
-            : blog.content
-        );
+        
+        // Convert content array to JSON string for editor
+        const contentStr = Array.isArray(blog.content)
+          ? JSON.stringify({ type: 'doc', content: blog.content })
+          : typeof blog.content === 'string'
+          ? blog.content
+          : JSON.stringify(blog.content);
+        
+        console.log('Content prepared for editor');
+        setContent(contentStr);
         setSelectedTags(blog.tags);
         setPublished(blog.published);
       } catch (error) {
+        console.error('Error loading blog:', error);
         toast.error('Failed to load blog');
         navigate('/blogs');
       } finally {
@@ -61,7 +75,8 @@ const EditBlogPage = () => {
     };
 
     loadBlog();
-  }, [id, navigate, toast]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slugOrId]); // Only depend on slugOrId
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -73,8 +88,22 @@ const EditBlogPage = () => {
       newErrors.title = 'Title is required';
     }
 
-    if (!content.trim() || content === '<p></p>') {
-      newErrors.content = 'Content is required';
+    // Check if content is empty (TipTap's empty state)
+    let parsedContent;
+    try {
+      parsedContent = JSON.parse(content || '{}');
+      const isEmpty = 
+        !parsedContent.content || 
+        parsedContent.content.length === 0 ||
+        (parsedContent.content.length === 1 && 
+         parsedContent.content[0].type === 'paragraph' && 
+         !parsedContent.content[0].content);
+      
+      if (isEmpty) {
+        newErrors.content = 'Content is required';
+      }
+    } catch (error) {
+      newErrors.content = 'Invalid content format';
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -84,15 +113,15 @@ const EditBlogPage = () => {
 
     setErrors({});
 
-    if (!id) return;
+    if (!blogId) return;
 
     // Update blog
     dispatch(
       updateBlogRequest({
         data: {
-          id,
+          id: blogId,
           title: title.trim(),
-          content: JSON.parse(content),
+          content: parsedContent.content || [],
           tags: selectedTags,
           published,
         },
@@ -108,11 +137,11 @@ const EditBlogPage = () => {
   };
 
   const handleDelete = () => {
-    if (!id) return;
+    if (!blogId) return;
 
     dispatch(
       deleteBlogRequest({
-        id,
+        id: blogId,
         onSuccess: () => {
           toast.success('Blog deleted successfully!');
           navigate('/blogs');
