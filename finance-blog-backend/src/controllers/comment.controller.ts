@@ -7,6 +7,7 @@ import { sendSuccess, sendError, notFound, badRequest } from '../utils/response.
 export const createComment = async (req: Request, res: Response): Promise<void> => {
   try {
     const { blogId, content, name, email, parentId } = req.body;
+   
     
     // Verify blog exists
     const blog = await blogModel.getBlogById(blogId);

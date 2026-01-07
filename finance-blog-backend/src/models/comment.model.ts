@@ -20,7 +20,7 @@ export const createComment = async (
     },
     content: commentData.content,
     likesCount: 0,
-    parentId: commentData.parentId,
+    parentId: commentData.parentId ?? '',
     replyCount: 0,
     createdAt: now,
     updatedAt: now,

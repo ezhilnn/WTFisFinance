@@ -10,6 +10,9 @@ import Button from '../../../components/common/Button';
 import { useAuth } from '../../auth/hooks/useAuth';
 import { VIEW_TRACKING } from '../../../config/constants';
 import styles from './BlogDetailPage.module.css';
+import CommentList from '../../comments/components/CommentList';
+import { useViewTracking } from '../../views/useViewTracking';
+import LikeButton from '../../likes/components/LikeButton';
 
 const BlogDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -28,6 +31,7 @@ const BlogDetailPage = () => {
       dispatch(clearCurrentBlog());
     };
   }, [slug, dispatch]);
+useViewTracking({ blogId: currentBlog?.id || '', enabled: !!currentBlog });
 
   // Record view and engaged read
   useEffect(() => {
@@ -132,6 +136,13 @@ const BlogDetailPage = () => {
             <span className={styles.metaItem}>
               {currentBlog.views} views
             </span>
+            <span className={styles.metaDivider}>•</span>
+            <LikeButton 
+              targetId={currentBlog.id} 
+              targetType="blog" 
+              initialCount={currentBlog.likesCount}
+              size="small"
+            />
           </div>
 
           {/* Admin actions */}
@@ -160,6 +171,7 @@ const BlogDetailPage = () => {
             investment advice. The author is not a SEBI-registered investment advisor.
           </p>
         </footer>
+         <CommentList blogId={currentBlog.id} />
       </article>
     </div>
   );
