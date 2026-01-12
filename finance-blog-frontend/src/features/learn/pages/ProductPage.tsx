@@ -3,6 +3,7 @@
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 import { getCategoryBySlug, getProductWithContent } from '../utils/learnData.utils';
+import { useLearnViewTracking } from '../hooks/useLearnViewTracking';
 import Button from '../../../components/common/Button';
 import LessonContent from '../components/LessonContent';
 import QuizSection from '../components/QuizSection';
@@ -20,6 +21,14 @@ const ProductPage = () => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const category = categorySlug ? getCategoryBySlug(categorySlug) : undefined;
+
+  // View tracking
+  useLearnViewTracking({
+    categorySlug,
+    productSlug,
+    subAnchorId: activeSubAnchorId || undefined,
+    enabled: !!productWithContent,
+  });
 
   // Flatten all sub-anchors in order for navigation
   const allSubAnchors: SubAnchorWithLessons[] = productWithContent
