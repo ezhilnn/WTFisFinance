@@ -1,0 +1,10 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"What Is Working Capital?"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Working capital measures short-term financial health and daily operational liquidity."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Formula"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Working Capital = Current Assets − Current Liabilities"}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Why It Matters"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Negative working capital can disrupt operations even if profits are reported."}]}
+]

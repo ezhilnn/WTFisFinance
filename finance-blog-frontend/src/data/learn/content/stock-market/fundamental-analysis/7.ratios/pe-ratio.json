@@ -1,0 +1,7 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Price to Earnings (PE) Ratio"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"PE shows how much investors pay for each rupee of earnings."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Formula: PE = Market Price per Share ÷ Earnings per Share (EPS)"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Example: Share price ₹200, EPS ₹10 → PE = 20."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"High PE means growth expectations, not guaranteed future returns."}]}
+]

@@ -1,0 +1,12 @@
+[
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "What Is Industry Analysis?" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "Industry analysis studies the overall environment in which a company operates. It looks at demand, competition, regulations, and growth prospects of the sector. A good company in a bad industry may still struggle." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "Why Industry Matters" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "Even strong companies cannot grow if the industry itself is shrinking. Investors prefer industries that benefit from long-term trends such as urbanization, rising incomes, or digital adoption." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "How to Analyze Industry" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "Look at market size, number of competitors, government regulation, and price sensitivity. Also check whether profits are spread across many players or concentrated among leaders." }] },
+
+  { "type": "paragraph", "content": [{ "type": "text", "text": "For example, highly competitive industries usually have lower profit margins, while industries with strong entry barriers often allow companies to earn higher profits." }] }
+]

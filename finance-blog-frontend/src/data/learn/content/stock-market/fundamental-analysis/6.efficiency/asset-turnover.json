@@ -1,0 +1,10 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"What Is Asset Turnover?"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Asset Turnover shows how efficiently assets are used to generate revenue."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Formula"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Asset Turnover = Revenue ÷ Total Assets"}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Why It Matters"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Higher ratio means better asset utilization. Capital-heavy industries usually have lower turnover."}]}
+]

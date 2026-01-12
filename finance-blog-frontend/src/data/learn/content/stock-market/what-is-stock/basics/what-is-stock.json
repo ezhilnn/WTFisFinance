@@ -1,0 +1,129 @@
+[
+  {
+    "type": "paragraph",
+    "content": [
+      {
+        "type": "text",
+        "text": "A stock (also called a share or equity) represents ownership in a company. When you buy a stock, you become a part-owner of that business, entitled to a portion of its profits and assets."
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "content": [
+      {
+        "type": "text",
+        "text": "Think of it this way: If a company is divided into 100 shares and you own 10 shares, you own 10% of that company."
+      }
+    ]
+  },
+  {
+    "type": "heading",
+    "attrs": {
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Key Characteristics"
+      }
+    ]
+  },
+  {
+    "type": "bulletList",
+    "content": [
+      {
+        "type": "listItem",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "text": "Ownership:"
+              },
+              {
+                "type": "text",
+                "text": " Each share represents fractional ownership"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "listItem",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "text": "Voting Rights:"
+              },
+              {
+                "type": "text",
+                "text": " Shareholders can vote on company decisions"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "listItem",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "text": "Dividends:"
+              },
+              {
+                "type": "text",
+                "text": " Companies may distribute profits to shareholders"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "listItem",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "text": "Capital Appreciation:"
+              },
+              {
+                "type": "text",
+                "text": " Stock price can increase over time"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

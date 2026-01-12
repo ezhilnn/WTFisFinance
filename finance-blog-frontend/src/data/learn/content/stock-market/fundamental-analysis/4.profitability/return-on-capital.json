@@ -1,0 +1,7 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Return on Capital Employed (ROCE)"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"ROCE measures how efficiently total capital (equity + debt) is used to generate profit."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Formula: ROCE = EBIT ÷ Capital Employed × 100"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Example: EBIT ₹200 crore, Capital Employed ₹1,000 crore → ROCE = 20%."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"ROCE above borrowing cost means value creation."}]}
+]

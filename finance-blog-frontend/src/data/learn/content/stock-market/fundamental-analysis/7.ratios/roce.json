@@ -1,0 +1,15 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"What Is ROE?"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"ROE measures profit generated on shareholders' money."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Formula"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"ROE = Net Profit ÷ Equity"}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Why Important"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"High ROE indicates efficient capital use."}]},
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"ROCE vs ROE — Key Difference"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"ROCE includes both debt and equity, ROE only includes equity."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Capital-heavy companies should be judged using ROCE."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Example: Two companies with same ROE but higher debt will have lower ROCE."}]}
+
+]

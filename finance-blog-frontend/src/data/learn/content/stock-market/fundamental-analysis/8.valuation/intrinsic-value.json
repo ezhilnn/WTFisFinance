@@ -1,0 +1,10 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"What Is Intrinsic Value?"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Intrinsic value is the true worth of a company based on future cash flows."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"How Calculated"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Using Discounted Cash Flow (DCF) models."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Why It Matters"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Buy when market price is below intrinsic value."}]}
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "cat_001",
+    "slug": "money-basics",
+    "title": "Money Basics",
+    "description": "Understanding the fundamentals of money, currency, and financial systems",
+    "icon": "💵",
+    "order": 1
+  },
+  {
+    "id": "cat_002",
+    "slug": "saving-instruments",
+    "title": "Saving Instruments",
+    "description": "Learn about different ways to save money and earn interest",
+    "icon": "🏦",
+    "order": 2
+  },
+  {
+    "id": "cat_003",
+    "slug": "banking-payments",
+    "title": "Banking & Payments",
+    "description": "Modern banking, digital payments, and financial transactions",
+    "icon": "💳",
+    "order": 3
+  },
+  {
+    "id": "cat_004",
+    "slug": "credit-loans-debt",
+    "title": "Credit, Loans & Debt",
+    "description": "Understanding borrowing, credit scores, and debt management",
+    "icon": "💸",
+    "order": 4
+  },
+  {
+    "id": "cat_005",
+    "slug": "investing-basics",
+    "title": "Investing Basics",
+    "description": "Core concepts of investing and building wealth",
+    "icon": "📊",
+    "order": 5
+  },
+  {
+    "id": "cat_006",
+    "slug": "stock-market",
+    "title": "Stock Market",
+    "description": "Equities, stock exchanges, and equity investing",
+    "icon": "📈",
+    "order": 6
+  },
+  {
+    "id": "cat_007",
+    "slug": "mutual-funds-etfs",
+    "title": "Mutual Funds & ETFs",
+    "description": "Pooled investment vehicles and index investing",
+    "icon": "🎯",
+    "order": 7
+  },
+  {
+    "id": "cat_008",
+    "slug": "fixed-income-bonds",
+    "title": "Fixed Income & Bonds",
+    "description": "Debt securities, fixed deposits, and stable income investments",
+    "icon": "🧾",
+    "order": 8
+  },
+  {
+    "id": "cat_009",
+    "slug": "gold-commodities",
+    "title": "Gold & Commodities",
+    "description": "Physical assets, precious metals, and commodity markets",
+    "icon": "🪙",
+    "order": 9
+  },
+  {
+    "id": "cat_010",
+    "slug": "derivatives",
+    "title": "Derivatives (F&O)",
+    "description": "Futures, options, and derivative instruments",
+    "icon": "⚡",
+    "order": 10
+  },
+  {
+    "id": "cat_011",
+    "slug": "crypto-digital-assets",
+    "title": "Crypto & Digital Assets",
+    "description": "Cryptocurrencies, blockchain, and digital finance",
+    "icon": "₿",
+    "order": 11
+  },
+  {
+    "id": "cat_012",
+    "slug": "retirement-pension",
+    "title": "Retirement & Pension",
+    "description": "Planning for retirement and pension schemes",
+    "icon": "👴",
+    "order": 12
+  },
+  {
+    "id": "cat_013",
+    "slug": "government-schemes",
+    "title": "Government Schemes",
+    "description": "Public sector savings and investment programs",
+    "icon": "🏛️",
+    "order": 13
+  },
+  {
+    "id": "cat_014",
+    "slug": "tax-compliance",
+    "title": "Tax & Compliance",
+    "description": "Taxation, filing returns, and regulatory compliance",
+    "icon": "📋",
+    "order": 14
+  },
+  {
+    "id": "cat_015",
+    "slug": "insurance",
+    "title": "Insurance",
+    "description": "Life, health, and general insurance products",
+    "icon": "🛡️",
+    "order": 15
+  },
+  {
+    "id": "cat_016",
+    "slug": "real-estate-reits",
+    "title": "Real Estate & REITs",
+    "description": "Property investment and real estate investment trusts",
+    "icon": "🏠",
+    "order": 16
+  },
+  {
+    "id": "cat_017",
+    "slug": "advanced-investing",
+    "title": "Advanced Investing",
+    "description": "Portfolio theory, asset allocation, and advanced strategies",
+    "icon": "🎓",
+    "order": 17
+  },
+  {
+    "id": "cat_018",
+    "slug": "financial-planning-goals",
+    "title": "Financial Planning & Goals",
+    "description": "Setting goals, budgeting, and comprehensive financial planning",
+    "icon": "🎯",
+    "order": 18
+  },
+  {
+    "id": "cat_019",
+    "slug": "business-startup-investing",
+    "title": "Business & Startup Investing",
+    "description": "Angel investing, venture capital, and startup ecosystem",
+    "icon": "🚀",
+    "order": 19
+  },
+  {
+    "id": "cat_020",
+    "slug": "financial-safety-scams",
+    "title": "Financial Safety & Scams",
+    "description": "Protecting yourself from fraud and financial scams",
+    "icon": "🔒",
+    "order": 20
+  }
+]

@@ -11,6 +11,7 @@ export const COLLECTIONS = {
   TAGS: 'tags',
   VIEWS: 'views',
   USERS: 'users',
+   LEARN_VIEWS: 'learn_views',
 };
 
 // View tracking configuration

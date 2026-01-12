@@ -1,0 +1,180 @@
+/* src/features/learn/components/LessonContent.module.css */
+
+.lessonCard {
+  background-color: var(--color-bg-card);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.lessonTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.lessonContent {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+/* Typography */
+.paragraph {
+  margin-bottom: var(--spacing-md);
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.heading2 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+  line-height: var(--line-height-tight);
+}
+
+.heading3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  line-height: var(--line-height-tight);
+}
+
+.heading4 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-normal);
+}
+
+.heading5,
+.heading6 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Lists */
+.bulletList,
+.orderedList {
+  margin: var(--spacing-md) 0;
+  padding-left: var(--spacing-xl);
+}
+
+.bulletList li,
+.orderedList li {
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-xs);
+}
+
+.bulletList li::marker {
+  color: var(--color-primary);
+}
+
+.orderedList li::marker {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Code */
+.codeBlock {
+  background-color: var(--color-bg-primary);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+.codeBlock code {
+  color: var(--color-text-primary);
+}
+
+.inlineCode {
+  background-color: var(--color-bg-primary);
+  color: var(--color-primary);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+/* Blockquote */
+.blockquote {
+  border-left: 4px solid var(--color-primary);
+  padding-left: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  background-color: var(--color-primary-light);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* Links */
+.link {
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Highlight */
+.highlight {
+  background-color: #fff59d;
+  padding: 2px 4px;
+  border-radius: var(--radius-sm);
+}
+
+/* Horizontal Rule */
+.horizontalRule {
+  border: none;
+  border-top: var(--border-width) solid var(--color-border);
+  margin: var(--spacing-xl) 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .lessonCard {
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .lessonTitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .heading2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .heading3 {
+    font-size: var(--font-size-lg);
+  }
+
+  .codeBlock {
+    padding: var(--spacing-md);
+    font-size: var(--font-size-xs);
+  }
+}

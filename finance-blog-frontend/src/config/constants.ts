@@ -36,6 +36,9 @@ export const ROUTES = {
   BLOG_DETAIL: '/blogs/:slug',
   CREATE_BLOG: '/admin/create-blog',
   EDIT_BLOG: '/admin/edit-blog/:id',
+  LEARN: '/learn',
+  LEARN_CATEGORY: '/learn/:categorySlug',
+  LEARN_PRODUCT: '/learn/:categorySlug/:productSlug',
   NOT_FOUND: '*',
 } as const;
 
@@ -55,3 +58,6 @@ export const TOAST_DURATION = 3000; // 3 seconds
 export const VIEW_TRACKING = {
   ENGAGED_READ_THRESHOLD: 15000, // 15 seconds in milliseconds
 } as const;
+
+// Learning Module - No global anchors
+// Anchors are now defined per product in products.json

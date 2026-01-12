@@ -1,0 +1,7 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Debt to Equity Ratio"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Debt-to-equity compares borrowed money with shareholder capital."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Formula: Debt to Equity = Total Debt ÷ Shareholder Equity"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Example: Debt ₹500 crore, Equity ₹1,000 crore → D/E = 0.5."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"High debt increases risk during business slowdowns."}]}
+]

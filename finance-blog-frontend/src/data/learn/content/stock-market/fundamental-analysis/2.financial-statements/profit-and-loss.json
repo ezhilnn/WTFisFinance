@@ -1,0 +1,13 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"What Is Profit and Loss Statement?"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"The P&L statement shows revenue, expenses, and profit over a time period. It tells whether the company is making money from operations."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Key Sections"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Revenue, Operating Profit, Interest, Tax, Net Profit."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Why It Matters"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Rising revenue with stable margins indicates business strength. Falling margins may signal cost pressure or competition."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Example"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"If revenue is ₹1000 and expenses are ₹800, profit is ₹200. Profit margin = 20%."}]}
+]

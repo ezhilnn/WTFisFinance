@@ -1,0 +1,10 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"What Is Inventory Cycle?"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Inventory cycle shows how fast products are sold and replaced."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Why It Matters"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Slow movement means capital stuck and risk of obsolescence."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Where Important"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Retail, FMCG, manufacturing sectors."}]}
+]

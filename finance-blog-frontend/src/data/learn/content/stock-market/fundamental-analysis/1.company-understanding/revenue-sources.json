@@ -1,0 +1,13 @@
+[
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "What Is the Profit and Loss Statement?" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "The Profit and Loss (P&L) statement shows how much money a company earned and spent during a period. It starts with revenue and subtracts expenses to arrive at net profit." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "Why P&L Is Important" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "It shows whether the business is profitable and how efficiently it operates. Investors track trends in revenue, expenses, and profit margins over time." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "Key Sections of P&L" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "Revenue, operating expenses, interest, taxes, and net profit. Operating profit shows business strength before financial costs." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "Example" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "If revenue is ₹100 and total expenses are ₹80, net profit is ₹20. Profit margin = 20%. Higher margins usually indicate better business quality." }] }
+]

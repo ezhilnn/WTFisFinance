@@ -1,0 +1,325 @@
+[
+  {
+    "id": "prod_001",
+    "categoryId": "cat_006",
+    "slug": "what-is-stock",
+    "title": "What is a Stock",
+    "description": "Understanding equity shares and ownership in companies",
+    "order": 1,
+    "anchors": [
+      {
+        "id": "anc_basics",
+        "title": "Stock Basics",
+        "slug": "basics",
+        "order": 1,
+        "subAnchors": [
+          { "id": "sub_def", "title": "What is a Stock", "slug": "what-is-stock", "order": 1 },
+          { "id": "sub_purpose", "title": "Why Stocks Exist", "slug": "why-stocks-exist", "order": 2 }
+        ]
+      },
+      {
+        "id": "anc_risk",
+        "title": "Risks & Safety",
+        "slug": "risks",
+        "order": 2,
+        "subAnchors": [
+          { "id": "sub_risk_types", "title": "Types of Risks", "slug": "types-of-risks", "order": 1 },
+          { "id": "sub_risk_manage", "title": "Risk Management", "slug": "risk-management", "order": 2 }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "prod_002",
+    "categoryId": "cat_006",
+    "slug": "stock-exchanges",
+    "title": "Stock Exchanges (NSE/BSE)",
+    "description": "How stock markets operate in India",
+    "order": 2,
+    "anchors": []
+  },
+
+  {
+    "id": "prod_003",
+    "categoryId": "cat_006",
+    "slug": "ipo",
+    "title": "IPO",
+    "description": "Initial Public Offerings and how to invest in them",
+    "order": 3,
+    "anchors": []
+  },
+
+  {
+    "id": "prod_004",
+    "categoryId": "cat_006",
+    "slug": "demat-trading-account",
+    "title": "Demat & Trading Account",
+    "description": "Opening and managing your investment accounts",
+    "order": 4,
+    "anchors": []
+  },
+
+  {
+    "id": "prod_005",
+    "categoryId": "cat_006",
+    "slug": "fundamental-analysis",
+    "title": "Fundamental Analysis",
+    "description": "Analyzing company financials, business quality, and intrinsic value",
+    "order": 5,
+    "anchors": [
+
+      {
+        "id": "anc_company_understanding",
+        "title": "Company Understanding",
+        "slug": "company-understanding",
+        "order": 1,
+        "subAnchors": [
+          { "id": "sub_business_model", "title": "Business Model", "slug": "business-model", "order": 1 },
+          { "id": "sub_industry_analysis", "title": "Industry Analysis", "slug": "industry-analysis", "order": 2 },
+          { "id": "sub_revenue_sources", "title": "Revenue Sources", "slug": "revenue-sources", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_financial_statements",
+        "title": "Financial Statements",
+        "slug": "financial-statements",
+        "order": 2,
+        "subAnchors": [
+          { "id": "sub_pl", "title": "Profit & Loss", "slug": "profit-and-loss", "order": 1 },
+          { "id": "sub_balance_sheet", "title": "Balance Sheet", "slug": "balance-sheet", "order": 2 },
+          { "id": "sub_cash_flow", "title": "Cash Flow", "slug": "cash-flow", "order": 3 },
+          { "id": "sub_notes_accounts", "title": "Notes to Accounts", "slug": "notes-to-accounts", "order": 4 }
+        ]
+      },
+
+      {
+        "id": "anc_growth",
+        "title": "Growth Analysis",
+        "slug": "growth-analysis",
+        "order": 3,
+        "subAnchors": [
+          { "id": "sub_sales_growth", "title": "Sales Growth", "slug": "sales-growth", "order": 1 },
+          { "id": "sub_profit_growth", "title": "Profit Growth", "slug": "profit-growth", "order": 2 },
+          { "id": "sub_consistency", "title": "Consistency", "slug": "consistency", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_profitability",
+        "title": "Profitability",
+        "slug": "profitability",
+        "order": 4,
+        "subAnchors": [
+          { "id": "sub_operating_margin", "title": "Operating Margin", "slug": "operating-margin", "order": 1 },
+          { "id": "sub_net_margin", "title": "Net Profit Margin", "slug": "net-profit-margin", "order": 2 },
+          { "id": "sub_roce", "title": "Return on Capital", "slug": "return-on-capital", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_financial_health",
+        "title": "Financial Health",
+        "slug": "financial-health",
+        "order": 5,
+        "subAnchors": [
+          { "id": "sub_de_ratio", "title": "Debt to Equity", "slug": "debt-to-equity", "order": 1 },
+          { "id": "sub_interest_cover", "title": "Interest Coverage", "slug": "interest-coverage", "order": 2 },
+          { "id": "sub_working_capital", "title": "Working Capital", "slug": "working-capital", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_efficiency",
+        "title": "Efficiency",
+        "slug": "efficiency",
+        "order": 6,
+        "subAnchors": [
+          { "id": "sub_asset_turnover", "title": "Asset Turnover", "slug": "asset-turnover", "order": 1 },
+          { "id": "sub_inventory_cycle", "title": "Inventory Cycle", "slug": "inventory-cycle", "order": 2 },
+          { "id": "sub_receivable_days", "title": "Receivable Days", "slug": "receivable-days", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_ratios",
+        "title": "Key Ratios",
+        "slug": "ratios",
+        "order": 7,
+        "subAnchors": [
+          { "id": "sub_pe", "title": "P/E Ratio", "slug": "pe-ratio", "order": 1 },
+          { "id": "sub_pb", "title": "P/B Ratio", "slug": "pb-ratio", "order": 2 },
+          { "id": "sub_peg", "title": "PEG Ratio", "slug": "peg-ratio", "order": 3 },
+          { "id": "sub_roe", "title": "Return on Equity", "slug": "roe", "order": 4 },
+          { "id": "sub_roce_ratio", "title": "ROCE", "slug": "roce", "order": 5 }
+        ]
+      },
+
+      {
+        "id": "anc_valuation",
+        "title": "Valuation",
+        "slug": "valuation",
+        "order": 8,
+        "subAnchors": [
+          { "id": "sub_intrinsic_value", "title": "Intrinsic Value", "slug": "intrinsic-value", "order": 1 },
+          { "id": "sub_margin_safety", "title": "Margin of Safety", "slug": "margin-of-safety", "order": 2 },
+          { "id": "sub_relative_valuation", "title": "Relative Valuation", "slug": "relative-valuation", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_management_quality",
+        "title": "Management Quality",
+        "slug": "management-quality",
+        "order": 9,
+        "subAnchors": [
+          { "id": "sub_promoter_holding", "title": "Promoter Holding", "slug": "promoter-holding", "order": 1 },
+          { "id": "sub_capital_allocation", "title": "Capital Allocation", "slug": "capital-allocation", "order": 2 },
+          { "id": "sub_corporate_governance", "title": "Corporate Governance", "slug": "corporate-governance", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_competitive_advantage",
+        "title": "Competitive Advantage",
+        "slug": "competitive-advantage",
+        "order": 10,
+        "subAnchors": [
+          { "id": "sub_moat_types", "title": "Moat Types", "slug": "moat-types", "order": 1 },
+          { "id": "sub_pricing_power", "title": "Pricing Power", "slug": "pricing-power", "order": 2 },
+          { "id": "sub_entry_barriers", "title": "Entry Barriers", "slug": "entry-barriers", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_sector_analysis",
+        "title": "Sector Analysis",
+        "slug": "sector-analysis",
+        "order": 11,
+        "subAnchors": [
+          { "id": "sub_cyclical_defensive", "title": "Cyclical vs Defensive", "slug": "cyclical-vs-defensive", "order": 1 },
+          { "id": "sub_regulatory_impact", "title": "Regulatory Impact", "slug": "regulatory-impact", "order": 2 },
+          { "id": "sub_commodity_dependence", "title": "Commodity Dependence", "slug": "commodity-dependence", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_red_flags",
+        "title": "Red Flags",
+        "slug": "red-flags",
+        "order": 12,
+        "subAnchors": [
+          { "id": "sub_accounting_flags", "title": "Accounting Red Flags", "slug": "accounting-red-flags", "order": 1 },
+          { "id": "sub_debt_traps", "title": "Debt Traps", "slug": "debt-traps", "order": 2 },
+          { "id": "sub_promoter_pledging", "title": "Promoter Pledging", "slug": "promoter-pledging", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_long_term",
+        "title": "Long-Term Assessment",
+        "slug": "long-term-assessment",
+        "order": 13,
+        "subAnchors": [
+          { "id": "sub_business_longevity", "title": "Business Longevity", "slug": "business-longevity", "order": 1 },
+          { "id": "sub_reinvestment_ability", "title": "Reinvestment Ability", "slug": "reinvestment-ability", "order": 2 },
+          { "id": "sub_scalability", "title": "Scalability", "slug": "scalability", "order": 3 }
+        ]
+      },
+
+      {
+        "id": "anc_common_mistakes",
+        "title": "Common Mistakes",
+        "slug": "common-mistakes",
+        "order": 14,
+        "subAnchors": [
+          { "id": "sub_overvalued_growth", "title": "Overvalued Growth", "slug": "overvalued-growth", "order": 1 },
+          { "id": "sub_story_stocks", "title": "Story Stocks", "slug": "story-stocks", "order": 2 },
+          { "id": "sub_ignoring_cashflows", "title": "Ignoring Cash Flows", "slug": "ignoring-cashflows", "order": 3 }
+        ]
+      }
+
+    ]
+  },
+
+  {
+    "id": "prod_006",
+    "categoryId": "cat_006",
+    "slug": "technical-analysis",
+    "title": "Technical Analysis",
+    "description": "Chart patterns, indicators, and price action",
+    "order": 6,
+    "anchors": []
+  },
+
+  {
+    "id": "prod_007",
+    "categoryId": "cat_006",
+    "slug": "portfolio-construction",
+    "title": "Portfolio Construction",
+    "description": "Building a diversified stock portfolio",
+    "order": 7,
+    "anchors": []
+  },
+
+  {
+    "id": "prod_008",
+    "categoryId": "cat_006",
+    "slug": "risk-management",
+    "title": "Risk Management",
+    "description": "Managing risk in equity investing",
+    "order": 8,
+    "anchors": []
+  },
+
+  {
+    "id": "prod_009",
+    "categoryId": "cat_001",
+    "slug": "what-is-money",
+    "title": "What is Money",
+    "description": "The concept, history, and functions of money",
+    "order": 1,
+    "anchors": [
+      {
+        "id": "anc_concepts",
+        "title": "Core Concepts",
+        "slug": "concepts",
+        "order": 1,
+        "subAnchors": [
+          { "id": "sub_definition", "title": "Definition of Money", "slug": "definition", "order": 1 }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "prod_010",
+    "categoryId": "cat_001",
+    "slug": "inflation",
+    "title": "Inflation",
+    "description": "Understanding rising prices and purchasing power",
+    "order": 2,
+    "anchors": []
+  },
+
+  {
+    "id": "prod_011",
+    "categoryId": "cat_002",
+    "slug": "savings-account",
+    "title": "Savings Account",
+    "description": "Basic bank accounts for daily transactions and savings",
+    "order": 1,
+    "anchors": []
+  },
+
+  {
+    "id": "prod_012",
+    "categoryId": "cat_002",
+    "slug": "fixed-deposit",
+    "title": "Fixed Deposit",
+    "description": "Locking money for guaranteed returns",
+    "order": 2,
+    "anchors": []
+  }
+]

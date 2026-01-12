@@ -1,0 +1,7 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"PEG Ratio — Growth Adjusted PE"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"PEG compares valuation with earnings growth."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Formula: PEG = PE ÷ Earnings Growth Rate"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Example: PE = 30, Growth = 15% → PEG = 2."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Lower PEG indicates better value relative to growth."}]}
+]

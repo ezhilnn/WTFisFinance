@@ -1,0 +1,13 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"What Is Interest Coverage Ratio?"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Interest Coverage Ratio measures how easily a company can pay interest on its loans using its operating profit."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Formula"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Interest Coverage = EBIT ÷ Interest Expense"}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Why It Matters"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Low ratio means even small profit decline can cause default. High ratio means safer debt."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Example"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"EBIT ₹500, Interest ₹100 → Coverage = 5 (healthy)"}]}
+]

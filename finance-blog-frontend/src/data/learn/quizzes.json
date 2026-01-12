@@ -1,0 +1,140 @@
+[
+  {
+    "id": "quiz_001",
+    "productId": "prod_001",
+    "questions": [
+      {
+        "q": "What does owning a stock represent?",
+        "options": [
+          "Ownership in a company",
+          "A loan to the company",
+          "A government bond",
+          "A fixed deposit"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "q": "If a company has 100 shares and you own 25, what percentage do you own?",
+        "options": [
+          "10%",
+          "25%",
+          "50%",
+          "75%"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "q": "Which of these is NOT a characteristic of stocks?",
+        "options": [
+          "Voting rights",
+          "Guaranteed returns",
+          "Potential dividends",
+          "Capital appreciation"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "q": "Which risk involves difficulty in selling a stock quickly?",
+        "options": [
+          "Market Risk",
+          "Company Risk",
+          "Liquidity Risk",
+          "Inflation Risk"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "q": "What relationship exists between risk and potential returns in stocks?",
+        "options": [
+          "No relationship",
+          "Inverse relationship",
+          "Direct relationship (higher risk = higher potential return)",
+          "Random relationship"
+        ],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "quiz_002",
+    "productId": "prod_009",
+    "questions": [
+      {
+        "q": "What is the primary function of money as a medium of exchange?",
+        "options": [
+          "To store wealth",
+          "To facilitate buying and selling",
+          "To measure inflation",
+          "To generate interest"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "q": "Which is NOT one of the three main functions of money?",
+        "options": [
+          "Medium of Exchange",
+          "Store of Value",
+          "Unit of Account",
+          "Source of Entertainment"
+        ],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "quiz_fa",
+    "productId": "prod_005",
+    "questions": [
+      {
+        "q": "A company with ₹100 earnings per share and a stock price of ₹2000 has a P/E ratio of?",
+        "options": [
+          "5",
+          "10",
+          "20",
+          "50"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "q": "Which financial statement shows a company's assets, liabilities, and equity at a specific point in time?",
+        "options": [
+          "Profit & Loss Statement",
+          "Cash Flow Statement",
+          "Balance Sheet",
+          "Income Statement"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "q": "A high P/E ratio typically indicates:",
+        "options": [
+          "The stock is undervalued",
+          "Investors expect high future growth",
+          "The company is facing bankruptcy",
+          "The stock pays high dividends"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "q": "Return on Equity (ROE) measures:",
+        "options": [
+          "How much profit a company makes from its total assets",
+          "How much profit a company makes from shareholder investments",
+          "The company's debt-to-equity ratio",
+          "The company's price-to-book ratio"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "q": "What does a competitive advantage (moat) help a company achieve?",
+        "options": [
+          "Lower employee costs",
+          "Protection from competitors and sustainable profits",
+          "Higher stock price volatility",
+          "Faster product launches"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  }
+]

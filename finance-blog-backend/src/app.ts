@@ -9,7 +9,9 @@ import likeRoutes from './routes/like.routes';
 import viewRoutes from './routes/view.routes';
 import tagRoutes from './routes/tag.routes';
 import adminRoutes from './routes/admin.routes';
-import userRoutes from './routes/user.routes'
+import userRoutes from './routes/user.routes';
+import learnViewRoutes from './routes/learn.view.routes'; // NEW
+
 
 // Import middleware
 import { errorHandler, notFoundHandler } from './middleware/error.middleware';
@@ -50,6 +52,7 @@ app.use('/api/views', viewRoutes);
 app.use('/api/tags', tagRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/learn', learnViewRoutes); 
 
 // Error handling (must be last)
 app.use(notFoundHandler);

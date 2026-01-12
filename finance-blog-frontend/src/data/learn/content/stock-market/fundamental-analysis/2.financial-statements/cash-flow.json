@@ -1,0 +1,14 @@
+[
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "What Is Cash Flow Statement?" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "The cash flow statement tracks actual money entering and leaving the company. It shows whether profits are backed by real cash." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "Why Cash Flow Is Critical" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "Companies can survive without profit for some time, but not without cash. Strong operating cash flow indicates business health." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "Three Types of Cash Flow" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "Operating, Investing, and Financing. Operating cash flow should ideally be positive and growing." }] },
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Why It Matters"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Healthy companies generate cash from operations, not loans."}]}
+
+]

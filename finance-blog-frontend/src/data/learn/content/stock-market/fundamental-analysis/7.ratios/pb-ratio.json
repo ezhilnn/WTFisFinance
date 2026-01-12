@@ -1,0 +1,10 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"What Is PB Ratio?"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"PB compares market price with company book value."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Formula"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"PB = Share Price ÷ Book Value Per Share"}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Where Useful"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Banks, NBFCs, capital-intensive industries."}]}
+]

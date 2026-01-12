@@ -18,6 +18,11 @@ import BlogDetailPage from './features/blogs/pages/BlogDetailPage';
 import CreateBlogPage from './features/blogs/pages/CreateBlogPage';
 import EditBlogPage from './features/blogs/pages/EditBlogPage';
 
+// Learn Pages
+import LearnHomePage from './features/learn/pages/LearnHomePage';
+import CategoryPage from './features/learn/pages/CategoryPage';
+import ProductPage from './features/learn/pages/ProductPage';
+
 function App() {
   return (
     <ErrorBoundary>
@@ -67,6 +72,32 @@ function App() {
             element={
               <MainLayout>
                 <EditBlogPage />
+              </MainLayout>
+            }
+          />
+
+          {/* Learn routes */}
+          <Route
+            path={ROUTES.LEARN}
+            element={
+              <MainLayout>
+                <LearnHomePage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path={ROUTES.LEARN_CATEGORY}
+            element={
+              <MainLayout>
+                <CategoryPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path={ROUTES.LEARN_PRODUCT}
+            element={
+              <MainLayout>
+                <ProductPage />
               </MainLayout>
             }
           />

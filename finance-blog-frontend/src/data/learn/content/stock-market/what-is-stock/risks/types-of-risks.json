@@ -1,0 +1,127 @@
+[
+  {
+    "type": "paragraph",
+    "content": [
+      {
+        "type": "text",
+        "text": "Stock investing carries several risks that investors must understand:"
+      }
+    ]
+  },
+  {
+    "type": "orderedList",
+    "content": [
+      {
+        "type": "listItem",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "text": "Market Risk:"
+              },
+              {
+                "type": "text",
+                "text": " Stock prices fluctuate based on market conditions, sentiment, and economic factors"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "listItem",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "text": "Company Risk:"
+              },
+              {
+                "type": "text",
+                "text": " Poor management, competition, or business model failures can destroy value"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "listItem",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "text": "Liquidity Risk:"
+              },
+              {
+                "type": "text",
+                "text": " Some stocks may be hard to sell quickly without price impact"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "listItem",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "text": "Volatility:"
+              },
+              {
+                "type": "text",
+                "text": " Prices can swing dramatically in short periods"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "blockquote",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ],
+            "text": "Remember: Higher potential returns come with higher risk. Never invest money you cannot afford to lose."
+          }
+        ]
+      }
+    ]
+  }
+]

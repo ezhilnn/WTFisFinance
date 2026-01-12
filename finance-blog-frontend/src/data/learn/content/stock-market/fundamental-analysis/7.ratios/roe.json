@@ -1,0 +1,8 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Return on Equity (ROE)"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"ROE measures profit generated using shareholder money."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Formula: ROE = Net Profit ÷ Shareholder Equity × 100"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Example: Profit ₹150 crore, Equity ₹750 crore → ROE = 20%."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Consistently high ROE signals strong business quality."}]}
+  
+]

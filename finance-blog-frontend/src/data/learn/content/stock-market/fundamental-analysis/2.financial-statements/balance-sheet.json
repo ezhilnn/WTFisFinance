@@ -1,0 +1,13 @@
+[
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "What Is the Balance Sheet?" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "The balance sheet shows what a company owns (assets) and owes (liabilities) at a specific date. The difference is shareholder equity." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "Why Balance Sheet Matters" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "It reveals financial stability, debt levels, and asset strength. A company with heavy debt is more risky during business downturns." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "Balance Sheet Equation" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "Assets = Liabilities + Equity. This must always balance." }] },
+
+  { "type": "heading", "attrs": { "level": 3 }, "content": [{ "type": "text", "text": "Example" }] },
+  { "type": "paragraph", "content": [{ "type": "text", "text": "If assets are ₹500, and liabilities are ₹300, then equity is ₹200. This is the net worth of shareholders." }] }
+]

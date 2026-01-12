@@ -1,0 +1,7 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Sales Growth — Expanding the Business"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Sales growth shows whether customers are buying more products or services from the company. It reflects market demand and competitive strength."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Formula: Sales Growth % = (Current Year Sales − Previous Year Sales) ÷ Previous Year Sales × 100"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Example: If sales grow from ₹1,000 crore to ₹1,200 crore, growth = (1200 − 1000) / 1000 = 20%."}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Consistent sales growth over many years is better than one-time spikes caused by temporary demand."}]}
+]

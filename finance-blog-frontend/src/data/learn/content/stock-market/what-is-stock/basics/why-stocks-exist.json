@@ -1,0 +1,53 @@
+[
+  {
+    "type": "paragraph",
+    "content": [
+      {
+        "type": "text",
+        "text": "Stocks serve two main purposes in the economy:"
+      }
+    ]
+  },
+  {
+    "type": "heading",
+    "attrs": {
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "For Companies"
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "content": [
+      {
+        "type": "text",
+        "text": "Companies issue stocks to raise capital for growth, expansion, research, or debt repayment. Instead of taking loans, they sell ownership stakes to public investors."
+      }
+    ]
+  },
+  {
+    "type": "heading",
+    "attrs": {
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "For Investors"
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "content": [
+      {
+        "type": "text",
+        "text": "Investors buy stocks to participate in a company's success and potentially earn returns through dividends and price appreciation. Historically, stocks have outperformed most other asset classes over the long term."
+      }
+    ]
+  }
+]

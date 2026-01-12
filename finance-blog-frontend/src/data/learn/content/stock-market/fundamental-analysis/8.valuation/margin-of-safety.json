@@ -1,0 +1,7 @@
+[
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"What Is Margin of Safety?"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Margin of safety is the discount between intrinsic value and market price."}]},
+
+  {"type":"heading","attrs":{"level":3},"content":[{"type":"text","text":"Why It Is Important"}]},
+  {"type":"paragraph","content":[{"type":"text","text":"Protects against estimation errors and market volatility."}]}
+]
